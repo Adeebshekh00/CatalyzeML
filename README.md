@@ -27,14 +27,10 @@ Depending on the **electrolyte medium**, HER proceeds through slightly different
 ### 🧪 **1. Overall HER Reaction**
 
 #### ⚫ In Acidic Medium:
-\[
-2H^+ + 2e^- \rightarrow H_2
-\]
+$2H^+ + 2e^- \rightarrow H_2$
 
 #### ⚫ In Alkaline Medium:
-\[
-2H_2O + 2e^- \rightarrow H_2 + 2OH^-
-\]
+$2H_2O + 2e^- \rightarrow H_2 + 2OH^-$
 
 In both cases, two electrons are required to generate one molecule of hydrogen.
 
@@ -52,9 +48,7 @@ The **first step**, where hydrogen ions (H⁺) or water molecules are reduced to
   $H^+ + e^- \rightarrow H^*$
 
 - *In alkaline medium:*  
-  \[
-  H_2O + e^- \rightarrow H^* + OH^-
-  \]  
+  $H_2O + e^- \rightarrow H^* + OH^-$ 
 
 This step depends strongly on the catalyst’s ability to **adsorb hydrogen**.
 
@@ -64,14 +58,10 @@ This step depends strongly on the catalyst’s ability to **adsorb hydrogen**.
 An adsorbed hydrogen atom combines with a proton (or another water molecule) and an electron to form hydrogen gas:  
 
 - *In acidic medium:*  
-  \[
-  H^* + H^+ + e^- \rightarrow H_2
-  \]
+  $H^* + H^+ + e^- \rightarrow H_2$
 
 - *In alkaline medium:*  
-  \[
-  H^* + H_2O + e^- \rightarrow H_2 + OH^-
-  \]
+  $H^* + H_2O + e^- \rightarrow H_2 + OH^-$
 
 This step involves both **charge transfer and desorption of hydrogen** — it’s often dominant in alkaline media.
 
@@ -80,9 +70,7 @@ This step involves both **charge transfer and desorption of hydrogen** — it’
 #### ⚫ (c) Tafel Step — Chemical Recombination  
 Two adsorbed hydrogen atoms combine directly on the catalyst surface to produce H₂ gas:
 
-\[
-2H^* \rightarrow H_2
-\]
+$2H^* \rightarrow H_2$
 
 This step doesn’t require additional electrons — it’s a **surface reaction**, typically favored on catalysts with high hydrogen coverage.
 
