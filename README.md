@@ -49,9 +49,7 @@ Each catalyst’s performance depends on which step is **rate-determining** and 
 The **first step**, where hydrogen ions (H⁺) or water molecules are reduced to adsorbed hydrogen atoms (H*) on the catalyst surface.  
 
 - *In acidic medium:*  
-  $$
-  H^+ + e^- \rightarrow H^* 
-  $$
+  $H^+ + e^- \rightarrow H^*$
 
 - *In alkaline medium:*  
   \[
