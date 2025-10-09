@@ -1,13 +1,13 @@
-# ⚡ Machine Learning-Based Analysis of Electro-Catalyst For Hydrogen Evolution Reaction (HER)
+# Machine Learning-Based Analysis of Electro-Catalyst For Hydrogen Evolution Reaction (HER)
 
-### 📘 Overview
+### Overview
 This project explores the use of **Machine Learning (ML)** techniques to identify and predict the most efficient, economically viable, and sustainable **catalyst families** for the **Hydrogen Evolution Reaction (HER)** — a key process in clean hydrogen production via water electrolysis.
 
 By combining theoretical electrochemistry with data-driven modeling, this work aims to bridge the gap between **experimental catalyst design** and **predictive computational insights**.
 
 ---
 
-## 🧠 Motivation — Why We Chose This Topic
+## Motivation — Why We Chose This Topic
 - The **Hydrogen Evolution Reaction (HER)** plays a crucial role in renewable energy systems, driving the production of **green hydrogen**.  
 - Through extensive literature review, we found that **most HER studies focus purely on experimental catalyst optimization**, leaving a gap in **data-driven, predictive approaches**.  
 - This project addresses that gap by applying **machine learning models** to identify **high-performance, low-cost, and sustainable catalysts** based on electrochemical parameters.  
@@ -17,31 +17,31 @@ By combining theoretical electrochemistry with data-driven modeling, this work a
 
 ---
 
-## ⚗️ Theoretical Background
+## Theoretical Background
 
 The **Hydrogen Evolution Reaction (HER)** is one of the two half-cell reactions in water electrolysis, occurring at the **cathode** and responsible for generating molecular hydrogen (H₂).  
 Depending on the **electrolyte medium**, HER proceeds through slightly different pathways but follows the same fundamental principle: **electron transfer to protons or water molecules to form H₂ gas**.
 
 ---
 
-### 🧪 **1. Overall HER Reaction**
+### **1. Overall HER Reaction**
 
-#### ⚫ In Acidic Medium:
+#### In Acidic Medium:
 $2H^+ + 2e^- \rightarrow H_2$
 
-#### ⚫ In Alkaline Medium:
+#### In Alkaline Medium:
 $2H_2O + 2e^- \rightarrow H_2 + 2OH^-$
 
 In both cases, two electrons are required to generate one molecule of hydrogen.
 
 ---
 
-### ⚙️ **2. Elementary Reaction Steps**
+### **2. Elementary Reaction Steps**
 
 HER typically occurs through **three key steps**, known as the **Volmer–Heyrovsky–Tafel mechanism**.  
 Each catalyst’s performance depends on which step is **rate-determining** and how easily it proceeds.
 
-#### ⚫ (a) Volmer Step — Electrochemical Adsorption  
+#### (a) Volmer Step — Electrochemical Adsorption  
 The **first step**, where hydrogen ions (H⁺) or water molecules are reduced to adsorbed hydrogen atoms (H*) on the catalyst surface.  
 
 - *In acidic medium:*  
@@ -54,7 +54,7 @@ This step depends strongly on the catalyst’s ability to **adsorb hydrogen**.
 
 ---
 
-#### ⚫ (b) Heyrovsky Step — Electrochemical Desorption  
+#### (b) Heyrovsky Step — Electrochemical Desorption  
 An adsorbed hydrogen atom combines with a proton (or another water molecule) and an electron to form hydrogen gas:  
 
 - *In acidic medium:*  
@@ -67,7 +67,7 @@ This step involves both **charge transfer and desorption of hydrogen** — it’
 
 ---
 
-#### ⚫ (c) Tafel Step — Chemical Recombination  
+#### (c) Tafel Step — Chemical Recombination  
 Two adsorbed hydrogen atoms combine directly on the catalyst surface to produce H₂ gas:
 
 $2H^* \rightarrow H_2$
@@ -76,7 +76,7 @@ This step doesn’t require additional electrons — it’s a **surface reaction
 
 ---
 
-### ⚡ **3. Summary**
+### **3. Summary**
 The HER mechanism is a balance between:
 - **Adsorption strength** of hydrogen on the surface (Volmer step),  
 - **Ease of electron/proton transfer** (Heyrovsky step), and  
@@ -86,7 +86,7 @@ An ideal catalyst facilitates all three steps efficiently — a principle captur
 
 ---
 
-## 💾 Dataset Description
+## Dataset Description
 Two datasets were prepared and used for model training and validation:
 
 1. **Synthetic (Physics-Guided) Dataset**
@@ -99,20 +99,20 @@ Two datasets were prepared and used for model training and validation:
 
 ---
 
-## 🧮 Machine Learning Models Used
+## Machine Learning Models Used
 To predict catalyst performance and classify optimal catalyst families, the following models were implemented:
 
-- 🌲 **Random Forest Classifier** – Robust against overfitting, strong interpretability  
-- 🌾 **Gradient Boosting Classifier** – High accuracy through ensemble learning  
-- ⚡ **XGBoost Classifier** – Optimized gradient boosting with better generalization  
-- 🌳 **Decision Tree Classifier** – Simple, interpretable baseline model  
+- **Random Forest Classifier** – Robust against overfitting, strong interpretability  
+- **Gradient Boosting Classifier** – High accuracy through ensemble learning  
+- **XGBoost Classifier** – Optimized gradient boosting with better generalization  
+- **Decision Tree Classifier** – Simple, interpretable baseline model  
 
 **Why these models?**  
 They effectively capture **non-linear interactions** among parameters like pH, morphology, and ECSA, and provide **feature importance rankings** to interpret the scientific significance of each feature.
 
 ---
 
-## 🧩 Key Findings
+## Key Findings
 - The **phosphide family with molybdenum as the metal component** && **sulphide family with iron as the metal component** consistently ranked highest across all models, making it the **best-fit catalyst** for HER based on aggregated predictions.  
 - **Important features** influencing HER activity include:
   - Morphology factors  
@@ -123,7 +123,7 @@ They effectively capture **non-linear interactions** among parameters like pH, m
 
 ---
 
-## 🚀 Future Scope
+## Future Scope
 - **Deep Feature Exploration:**  
   Investigate the most influential parameters (morphology, ECSA, pH, current density) for molybdenum phosphide using new experimental and literature data.
 
@@ -138,20 +138,20 @@ They effectively capture **non-linear interactions** among parameters like pH, m
 
 ---
 
-## 🧪 Tools & Technologies
+## Tools & Technologies
 - **Python** (Pandas, NumPy, Scikit-learn, ML-Algorithms, Matplotlib, Seaborn)
 - **Jupyter Notebook / Google Colab**
 - **Streamlit** for UI deployment
 - **Research data extraction** from literature (ACS, RSC, Electrochimica Acta, etc.)
 ---
 
-## 📊 Visual Insight — HER Volcano Plot
+## Visual Insight — HER Volcano Plot
 The relationship between **exchange current density (log j₀)** and **M–H bond strength** follows a **volcano trend**, illustrating the **Sabatier principle** — the catalyst must bind hydrogen neither too weakly nor too strongly for optimal activity.  
 This principle supports why **Mo-based phosphides** perform exceptionally well — they strike a near-optimal balance between adsorption and desorption energetics.
 
 ---
 
-## 📚 References
+## References
 1. Feidenhans’l, A. A. *et al.* “Precious Metal-Free Hydrogen Evolution Catalyst Design and Application,” *Electrochimica Acta*, 2023.  
 2. Jaramillo, T. F. *et al.* “Active Sites and Hydrogen Binding Energy in HER Catalysts,” *Science*, 2007.  
 3. Open Catalyst Project, *OC20 Dataset for Catalysis ML Research*, 2020.  
